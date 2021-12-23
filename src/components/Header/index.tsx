@@ -10,7 +10,7 @@ const AppHeaderContainer = styled(Flex)`
   // justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 30px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.background};
   a {
     display: inline-block;
@@ -25,8 +25,10 @@ const FrDiv = styled.div`
     margin-left: 16px;
     img {
       display: block;
-      width: 30px;
-    }
+      width: 24px;
+      ${({ theme }) => theme.mediaQueries.md} {
+        width: 30px;
+      }
   }
 `;
 const HeaderComponent = () => {

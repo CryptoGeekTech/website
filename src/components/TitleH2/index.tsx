@@ -10,7 +10,7 @@ const TitleH2Wrap = styled.div`
     display: inline-block;
     line-height: 24px;
     padding-bottom: 8px;
-    padding-right: 200px;
+    padding-right: 4px;
     font-size: 16px;
     text-transform: uppercase;
     border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};

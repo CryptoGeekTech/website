@@ -26,7 +26,7 @@ const MenuLink = [
   },
 ];
 const MenuWrap = styled(Flex)`
-  padding: 0;
+  padding: 20px 0 4px;
   flex-direction: column;
   text-align: center;
   a {
@@ -52,6 +52,8 @@ const MenuWrap = styled(Flex)`
   }
 `;
 const TitleH2 = styled.h2`
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: "Arial-BoldMT";
   color: ${({ theme }) => theme.colors.text};
