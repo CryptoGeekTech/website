@@ -12,6 +12,7 @@ const TitleH2Wrap = styled.div`
     padding-bottom: 8px;
     padding-right: 200px;
     font-size: 16px;
+    text-transform: uppercase;
     border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
     ${({ theme }) => theme.mediaQueries.md} {
       font-size: 20px;

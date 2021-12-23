@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Redirect, Switch } from "react-router-dom";
 import { Web3Provider } from "@ethersproject/providers";
 import { useWeb3React } from "@web3-react/core";
 
@@ -34,9 +34,6 @@ const App = (): JSX.Element => {
       <Layout>
         <Suspense fallback="">
           <Switch>
-            <Route path="/about" exact>
-              <Homepage />
-            </Route>
             <Route path="/ventures" exact>
               <Venturespage />
             </Route>
@@ -49,6 +46,10 @@ const App = (): JSX.Element => {
             <Route path="/contactUs" exact>
               <ContactUspage />
             </Route>
+            <Route path="/about" exact>
+              <Homepage />
+            </Route>
+            <Redirect push exact to={"/about"} />
           </Switch>
         </Suspense>
       </Layout>

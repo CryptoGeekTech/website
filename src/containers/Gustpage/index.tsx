@@ -5,11 +5,8 @@ import TitleContext from "components/TitleContext";
 import styled from "styled-components";
 import { Flex } from "uikit";
 const GustpageWrap = styled(Flex)`
-  flex: 1;
+  width: 100%;
   flex-direction: column;
-  ${({ theme }) => theme.mediaQueries.md} {
-    flex-direction: row;
-  }
 `;
 
 const TitleContextWrap = styled.div`
@@ -21,13 +18,15 @@ const TitleContextWrap = styled.div`
   }
 `;
 const GustPageUl = styled.ul`
-  clear: both;
-  overflow: hidden;
+  display: flex;
+  flex-flow: wrap;
+  align-items: stretch;
+  justify-content: space-between;
   list-style: none;
 `;
 const GustPageLi = styled.li`
   float: left;
-  width: 280px;
+  width: 30%;
   margin-right: 20px;
   margin-bottom: 66px;
   img {

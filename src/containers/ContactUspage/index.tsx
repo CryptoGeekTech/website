@@ -9,12 +9,26 @@ const ContactUspageWrap = styled(Flex)`
 const ContactUspage = (): JSX.Element => {
   return (
     <ContactUspageWrap flexDirection="column">
-      <TitleH2>GUEST</TitleH2>
+      <TitleH2>Contact us</TitleH2>
       <TitleContext>
-        If you'd like to get in touch, feel free to drop us a message at <strong>ventures@cryptogeek.cn</strong>
+        If you'd like to get in touch, feel free to drop us a message at{" "}
+        <strong
+          onClick={() => {
+            window.open("mailto:ventures@cryptogeek.cn?subject=Investment%20application&amp;&amp;");
+          }}
+        >
+          ventures@cryptogeek.cn
+        </strong>
       </TitleContext>
       <TitleContext mt="30px">
-        TG Address：<strong>@AliCryptoGeek</strong>
+        TG Address：
+        <strong
+          onClick={() => {
+            window.open("https://t.me/cryptogeekcommunity");
+          }}
+        >
+          @AliCryptoGeek
+        </strong>
       </TitleContext>
     </ContactUspageWrap>
   );
