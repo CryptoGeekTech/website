@@ -6,11 +6,16 @@ import { Button, Flex } from "uikit";
 const HomepageWrap = styled(Flex)`
   flex: 1;
   flex-direction: column;
+  align-items: start;
   img {
     display: block;
     width: 80%;
-    padding-top: 10px;
+    margin-top: 140px;
     padding-left: 10%;
+    display: none;
+    ${({ theme }) => theme.mediaQueries.md} {
+      display: block;
+    }
   }
   ${({ theme }) => theme.mediaQueries.md} {
     flex-direction: row;
@@ -32,7 +37,7 @@ const Link = styled.a`
   font-size: 14px;
   line-height: 28px;
   padding: 0 20px;
-  margin-right: 16px;
+  margin-right: 12px;
   margin-bottom: 12px;
   color: ${({ theme }) => theme.colors.text};
   border: 1px solid ${({ theme }) => theme.colors.text};

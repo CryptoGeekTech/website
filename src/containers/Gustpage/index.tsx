@@ -13,7 +13,7 @@ const TitleContextWrap = styled.div`
   width: 100%;
   padding-bottom: 20px;
   ${({ theme }) => theme.mediaQueries.md} {
-    width: 508px;
+    width: 588px;
     padding-bottom: 40px;
   }
 `;
@@ -26,12 +26,15 @@ const GustPageUl = styled.ul`
 `;
 const GustPageLi = styled.li`
   float: left;
-  width: 30%;
+  width: 40%;
   margin-right: 20px;
   margin-bottom: 66px;
+  ${({ theme }) => theme.mediaQueries.md} {
+    width: 30%;
+  }
   img {
     margin-bottom: 20px;
-    border: 1px dashed ${({ theme }) => theme.colors.cardBorder};
+    // border: 1px dashed ${({ theme }) => theme.colors.cardBorder};
   }
 `;
 const gusetArr = [
