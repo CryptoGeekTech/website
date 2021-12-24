@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { preLink } from "config/index";
 const LogoWrap = styled.a`
-  width: 34%;
+  width: 26%;
   ${({ theme }) => theme.mediaQueries.md} {
     img {
       width: 280px;
