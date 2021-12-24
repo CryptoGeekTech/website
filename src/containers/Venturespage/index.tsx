@@ -34,9 +34,9 @@ const Link = styled.a`
   display: block;
   float: left;
   font-family: ArialMT;
-  font-size: 14px;
-  line-height: 28px;
-  padding: 0 20px;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0 12px;
   margin-right: 12px;
   margin-bottom: 12px;
   color: ${({ theme }) => theme.colors.text};
@@ -44,6 +44,11 @@ const Link = styled.a`
   &:hover {
     color: ${({ theme }) => theme.colors.background};
     background-color: ${({ theme }) => theme.colors.text};
+  }
+  ${({ theme }) => theme.mediaQueries.md} {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 28px;
   }
 `;
 const ButtonStyle = styled(Button)`
@@ -53,10 +58,13 @@ const ButtonStyle = styled(Button)`
   padding: 0 46px;
   height: 40px;
   line-height: 40px;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   display: block;
   width: 100%;
   ${({ theme }) => theme.mediaQueries.md} {
+    margin-top: 60px;
+    margin-bottom: 20px;
     width: 300px;
   }
 `;

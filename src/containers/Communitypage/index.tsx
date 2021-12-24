@@ -18,8 +18,8 @@ const CommunitypageWrap = styled(Flex)`
 
 const LiWrap = styled.div`
   padding-top: 20px;
-  padding-bottom: 40px;
-  width: 45%;
+  padding-bottom: 10px;
+  width: 49%;
   ${({ theme }) => theme.mediaQueries.md} {
     width: 25%;
     padding-top: 40px;

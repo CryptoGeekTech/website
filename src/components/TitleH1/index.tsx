@@ -4,7 +4,7 @@ import { Heading } from "uikit";
 const TitleH1Wrap = styled(Heading)`
   font-family: "Arial-BoldMT";
   line-height: 28px;
-  font-size: 30px;
+  font-size: 26px;
   ${({ theme }) => theme.mediaQueries.md} {
     line-height: 50px;
     font-size: 36px;

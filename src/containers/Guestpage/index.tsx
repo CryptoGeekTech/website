@@ -37,9 +37,13 @@ const GustPageLi = styled.li`
     margin-top: 0;
     margin-bottom: 66px;
     width: 30%;
+    img {
+      margin-bottom: 20px;
+    }
   }
   img {
     margin-bottom: 20px;
+    width: 100%;
     // border: 1px dashed ${({ theme }) => theme.colors.cardBorder};
   }
 `;

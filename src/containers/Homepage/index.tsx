@@ -21,10 +21,16 @@ const HomepageWrap = styled(Flex)`
     flex-direction: row;
   }
 `;
+const FlDiv = styled.div`
+  padding-right: 20px;
+  ${({ theme }) => theme.mediaQueries.md} {
+    padding-right: 0;
+  }
+`;
 const Homepage = () => {
   return (
     <HomepageWrap>
-      <div>
+      <FlDiv>
         <TitleH2>INTRODUCTION</TitleH2>
         <TitleContext>
           CryptoGeek was established in January 2017. The fund size of CryptoGeek Venture exceeds 100 million U.S.
@@ -41,7 +47,7 @@ const Homepage = () => {
           We have established long-term and in-depth partnerships with major public chain ecosystems and investment
           institutions around the world.
         </TitleContext>
-      </div>
+      </FlDiv>
       <img src="/images/page/image_ct1.svg" alt="" />
     </HomepageWrap>
   );
