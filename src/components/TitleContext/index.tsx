@@ -5,6 +5,7 @@ const TitleWrap = styled(Text)`
   line-height: 22px;
   font-family: "ArialMT";
   font-weight: 400;
+  font-size: 14px;
   strong {
     font-weight: bold;
     font-style: oblique;
@@ -13,10 +14,8 @@ const TitleWrap = styled(Text)`
       text-decoration: underline;
     }
   }
-  font-size: 12px;
   ${({ theme }) => theme.mediaQueries.md} {
     line-height: 28px;
-    font-size: 14px;
   }
 `;
 const TitleContext = ({ children, mt }: { children: ReactNode | JSX.Element; mt?: string }) => {

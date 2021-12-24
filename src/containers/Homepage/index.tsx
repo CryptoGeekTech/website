@@ -6,10 +6,7 @@ import { Flex } from "uikit";
 const HomepageWrap = styled(Flex)`
   flex-direction: column;
   img {
-    display: block;
-    width: 80%;
-    padding-top: 10px;
-    padding-left: 10%;
+    display: none;
   }
   ${({ theme }) => theme.mediaQueries.md} {
     flex-direction: row;
@@ -17,6 +14,7 @@ const HomepageWrap = styled(Flex)`
       width: 400px;
       padding-top: 0;
       padding-left: 80px;
+      display: block;
     }
   }
   ${({ theme }) => theme.mediaQueries.md} {

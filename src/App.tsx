@@ -11,7 +11,7 @@ import Layout from "layout/Layout";
 const Homepage = React.lazy(() => import("containers/Homepage"));
 const Venturespage = React.lazy(() => import("containers/Venturespage"));
 const Communitypage = React.lazy(() => import("containers/Communitypage"));
-const Gustpage = React.lazy(() => import("containers/Gustpage"));
+const Guestpage = React.lazy(() => import("containers/Guestpage"));
 const ContactUspage = React.lazy(() => import("containers/ContactUspage"));
 
 const App = (): JSX.Element => {
@@ -40,8 +40,8 @@ const App = (): JSX.Element => {
             <Route path="/community" exact>
               <Communitypage />
             </Route>
-            <Route path="/gust" exact>
-              <Gustpage />
+            <Route path="/guest" exact>
+              <Guestpage />
             </Route>
             <Route path="/contactUs" exact>
               <ContactUspage />

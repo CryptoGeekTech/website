@@ -17,8 +17,8 @@ const MenuLink = [
     title: "community",
   },
   {
-    link: "/gust",
-    title: "gust",
+    link: "/guest",
+    title: "guest",
   },
   {
     link: "/contactUs",
