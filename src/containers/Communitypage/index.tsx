@@ -151,7 +151,7 @@ const Communitypage = () => {
         navigation={true}
         className="mySwiper"
       >
-        {[2, 0, 1].map((round) => (
+        {[0, 1, 2].map((round) => (
           <SwiperSlide key={round}>
             <RoundCard value={[round * 4 + 1, round * 4 + 2, round * 4 + 3, round * 4 + 4]} />
           </SwiperSlide>
