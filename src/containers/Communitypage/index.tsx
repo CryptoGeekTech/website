@@ -77,6 +77,7 @@ const CommunitypageStyled = styled.div`
   }
   .swiper-button-next:after,
   .swiper-button-prev:after {
+    display: none;
     color: ${({ theme }) => theme.colors.text};
     font-size: 20px;
   }
