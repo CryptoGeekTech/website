@@ -18,7 +18,7 @@ const TitleWrap = styled(Text)`
   ${({ theme }) => theme.mediaQueries.md} {
     font-size: 14px;
     font-weight: normal;
-    line-height: 28px;
+    line-height: 24px;
   }
 `;
 const TitleContext = ({ children, mt }: { children: ReactNode | JSX.Element; mt?: string }) => {

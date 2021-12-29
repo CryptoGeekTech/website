@@ -75,8 +75,8 @@ const gusetArr = [
   },
   {
     img: "/images/guest/iamge_rw_6.webp",
-    title: "Ryan",
-    context: "Former Polkadot Head of Financing",
+    title: "Silvio Micali",
+    context: "Founder of Algorand & Ford Professor of Engineering at MIT Turing Award",
   },
 ];
 const Gustpage = (): JSX.Element => {

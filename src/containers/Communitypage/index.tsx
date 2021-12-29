@@ -85,6 +85,11 @@ const CommunitypageStyled = styled.div`
     background-color: ${({ theme }) => theme.colors.text};
   }
 `;
+const CommunitypageImgWrap = styled.div`
+  img {
+    width: 100%;
+  }
+`;
 const SwiperContainer = styled.div`
   display: flex;
   flex-flow: wrap;
@@ -118,6 +123,7 @@ const Communitypage = () => {
   return (
     <CommunitypageStyled>
       <TitleH2>COMMUNITY</TitleH2>
+
       <CommunitypageWrap>
         {CommunityArr.map((v: { number: string; text: string }, index: number) => {
           return (
@@ -128,6 +134,10 @@ const Communitypage = () => {
           );
         })}
       </CommunitypageWrap>
+      <TitleH2>Activities</TitleH2>
+      <CommunitypageImgWrap>
+        <img src={`/images/community/iamge_ama.webp`} alt="iamge_ama" />
+      </CommunitypageImgWrap>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
