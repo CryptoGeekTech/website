@@ -50,8 +50,8 @@ const GustPageLi = styled.li`
 const gusetArr = [
   {
     img: "/images/guest/iamge_rw_1.webp",
-    title: "Polkadot",
-    context: "Founding Member of Polkadot",
+    title: "Thibaut Sardan",
+    context: "Former Founding Member of Polkadot",
   },
   {
     img: "/images/guest/iamge_rw_2.webp",
@@ -76,7 +76,7 @@ const gusetArr = [
   {
     img: "/images/guest/iamge_rw_6.webp",
     title: "Ryan",
-    context: "Polkadot Head of Financing",
+    context: "Former Polkadot Head of Financing",
   },
 ];
 const Gustpage = (): JSX.Element => {
