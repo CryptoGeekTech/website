@@ -48,7 +48,7 @@ const Homepage = () => {
           institutions around the world.
         </TitleContext>
       </FlDiv>
-      <img src="/images/page/image_ct1.svg" alt="" />
+      <img src="/images/page/Crypto Geek.svg" alt="" />
     </HomepageWrap>
   );
 };
