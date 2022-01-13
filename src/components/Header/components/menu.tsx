@@ -5,22 +5,27 @@ import styled from "styled-components";
 
 const MenuLink = [
   {
+    linkValue: "/",
     link: "/about",
     title: "about",
   },
   {
+    linkValue: "/ventures",
     link: "/ventures",
     title: "ventures",
   },
   {
+    linkValue: "/community",
     link: "/community",
     title: "community",
   },
   {
+    linkValue: "/guest",
     link: "/guest",
     title: "guest",
   },
   {
+    linkValue: "/contactUs",
     link: "/contactUs",
     title: "Contact Us",
   },
@@ -79,11 +84,11 @@ export default function Menu() {
       ) : null}
       {showMenu || !(isMd || isXs || isSm) ? (
         <MenuWrap>
-          {MenuLink.map((v: { link: string; title: string }, index: number) => {
+          {MenuLink.map((v: { link: string; linkValue: string; title: string }, index: number) => {
             return (
               <Link
                 key={index}
-                className={pathname.startsWith(v.link) ? "on" : ""}
+                className={pathname === v.linkValue ? "on" : ""}
                 to={v.link}
                 onClick={() => {
                   setShowMenu(false);

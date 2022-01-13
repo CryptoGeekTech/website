@@ -46,10 +46,10 @@ const App = (): JSX.Element => {
             <Route path="/contactUs" exact>
               <ContactUspage />
             </Route>
-            <Route path="/about" exact>
+            <Route path="/" exact>
               <Homepage />
             </Route>
-            <Redirect push exact to={"/about"} />
+            <Redirect push exact to={"/"} />
           </Switch>
         </Suspense>
       </Layout>
