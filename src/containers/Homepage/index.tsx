@@ -33,7 +33,7 @@ const Homepage = () => {
       <FlDiv>
         <TitleH2>INTRODUCTION</TitleH2>
         <TitleContext>
-          CryptoGeek was established in January 2017. The fund size of CryptoGeek Venture exceeds 100 million U.S.
+          Crypto Geek was established in January 2017. The fund size of Crypto Geek Venture exceeds 100 million U.S.
           dollars. Invested in innovative projects in the field of Web3.0 such as Polkadot, Algorand, Compound,
           Filecoin, Cosmos, Mina, and etc.
         </TitleContext>
