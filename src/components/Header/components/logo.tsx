@@ -12,7 +12,7 @@ const LogoWrap = styled.a`
 function Logo() {
   return (
     <LogoWrap href={preLink + "/"} title="CryptoGeekTech">
-      <img src={"/images/header/img/logo.svg"} alt="logo" />
+      <img src={"/images/header/img/logo.svg"} alt="Crypto Geek" title="Crypto Geek" />
     </LogoWrap>
   );
 }
