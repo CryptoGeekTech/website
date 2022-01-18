@@ -78,6 +78,22 @@ const gusetArr = [
     title: "Silvio Micali",
     context: "Founder of Algorand & Ford Professor of Engineering at MIT Turing Award",
   },
+
+  {
+    img: "/images/guest/iamge_rw_7.webp",
+    title: "Sunny Aggarwal",
+    context: "Former Research Scientist and Core Builder of Tendermint/Cosmos",
+  },
+  {
+    img: "/images/guest/iamge_rw_8.webp",
+    title: "Illia Polosukhin",
+    context: "Co-Founder of Near Protocol",
+  },
+  {
+    img: "",
+    title: "",
+    context: "",
+  },
 ];
 const Gustpage = (): JSX.Element => {
   return (
@@ -93,9 +109,9 @@ const Gustpage = (): JSX.Element => {
         {gusetArr.map((v: { img: string; title: string; context: string }, index: number) => {
           return (
             <GustPageLi key={index}>
-              <img src={v.img} alt="" />
-              <TitleH3>{v.title}</TitleH3>
-              <TitleContext>{v.context}</TitleContext>
+              {v.img ? <img src={v.img} alt="" /> : null}
+              <TitleH3>{v?.title}</TitleH3>
+              <TitleContext>{v?.context}</TitleContext>
             </GustPageLi>
           );
         })}
