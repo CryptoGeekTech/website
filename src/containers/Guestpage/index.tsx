@@ -90,9 +90,9 @@ const gusetArr = [
     context: "Co-Founder of Near Protocol",
   },
   {
-    img: "",
-    title: "",
-    context: "",
+    img: "/images/guest/iamge_rw_9.webp",
+    title: "Chjango Unchained",
+    context: "Former Vice President of Ecosystem Development of Tendermint/Cosmos",
   },
 ];
 const Gustpage = (): JSX.Element => {
