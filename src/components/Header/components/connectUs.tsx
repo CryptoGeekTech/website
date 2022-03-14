@@ -5,13 +5,13 @@ const LinkArr = [
     title: "CryptoGeekTech twitter",
     icon: "twitter",
     link: "https://twitter.com/CryptoGeekCG",
-    imgTitle: "Crypto Geek",
+    imgTitle: "CryptoGeek",
   },
   {
     title: "CryptoGeekTech telegram",
     icon: "telegram",
     link: "https://t.me/cryptogeekcommunity",
-    imgTitle: "Crypto Geek",
+    imgTitle: "CryptoGeek",
   },
 ];
 

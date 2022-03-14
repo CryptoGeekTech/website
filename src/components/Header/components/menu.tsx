@@ -90,7 +90,7 @@ export default function Menu() {
                 key={index}
                 className={pathname === v.linkValue ? "on" : ""}
                 to={v.link}
-                title={`Crypto Geek ${v.title}`}
+                title={`CryptoGeek ${v.title}`}
                 onClick={() => {
                   setShowMenu(false);
                 }}
